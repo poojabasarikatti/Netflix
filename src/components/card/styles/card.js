@@ -33,7 +33,7 @@ export const Group = styled.div`
   ${({ margin }) => margin && `margin: ${margin}`};
 
   > ${Container}:first-of-type {
-    @media (min-width: 100px) {
+    @media (min-width: 1100px) {
       margin-top: -150px;
     }
   }
@@ -74,7 +74,7 @@ export const Meta = styled.div`
 
 export const Image = styled.img`
   border: 0;
-  width: 100%;
+  width: 100%+;
   max-width: 305px;
   cursor: pointer;
   height: auto;
@@ -189,8 +189,9 @@ export const Content = styled.div`
 export const Maturity = styled.div`
   background-color: ${({ rating }) => (rating >= 15 ? 'red' : 'green')};
   border-radius: 15px;
-  width: 20px;
+  width: 28px;
   padding: 5px;
+  line-height: 28px;
   text-align: center;
   color: white;
   font-weight: bold;
